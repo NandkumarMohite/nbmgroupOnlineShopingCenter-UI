@@ -1,0 +1,43 @@
+<!-- <div class="welcome-container">
+  <div class="element-list">
+    <div class="element" *ngFor="let element of elements">
+      <div class="element-image">
+      </div>
+      <div class="element-details">
+        <img [src]="element.elementImage" alt="Image">
+        <h3>{{ element.elementName }}</h3>
+        <p>{{ element.elementType }}</p>
+        <p>{{ element.elementDiscription }}</p>
+        <p>Price: {{ element.elementPrize }}</p>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="container">
+  <div class="row">
+    <h3 style="color:rgb(255, 101, 127);text-align: center;margin-bottom: revert;">items</h3>
+    <div class="col-md-6" *ngFor="let element of elements">
+      <div class="card">
+        <div class="card-image" >
+        <img  class="image-css" [src]="element.elementImage" alt="Image" style="
+       
+        border-top-left-radius: 10px; 
+        border-bottom-left-radius: 10px;
+        width: 100%;">
+        </div>
+        <div class="card-details">
+          <h3>{{ element.elementType }}</h3>
+          <p>{{ element.elementName }}</p>
+          <p class="element-description" title="{{ element.elementDiscription }}">{{ element.elementDiscription }}</p>
+          <button class="button-class" (click)="addToCart(element)" [ngStyle]="{backgroundColor:getColor(element.isElementInCart) ,outlineColor:getRadiusColor(element.isElementInCart)}" >
+            <span *ngIf="!element.isElementInCart" >Add to Cart</span>
+            <span  *ngIf="element.isElementInCart" ><i class="bi bi-check-circle green-icon"></i>Added </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

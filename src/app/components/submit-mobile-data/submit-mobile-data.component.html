@@ -1,0 +1,67 @@
+<div class="container">
+    <div class="row">
+      <h3 style="color: rgb(255, 101, 127); text-align: center; margin-bottom: revert;">Add an item</h3>
+      <div class="col-md-6">
+        <div class="centered-card">
+          <div class="card">
+            <div class="card-details">
+              <form class="saveFormClass" (ngSubmit)="saveForm()">
+
+                <div class="input-wrapper">
+                    <input type="text" id="elementName" name="elementName" [(ngModel)]="formData.elementName" required>
+                    <label for="elementName">Element Name</label>
+                    <div class="underline"></div>
+                  </div>
+                
+                  <div class="input-wrapper">
+                    <div class="dropdown">
+                      <select id="elementType" name="elementType" [(ngModel)]="formData.elementType" required>
+                        <option value=""></option>
+                        <option value="Mobile">Mobile</option>
+                        <option value="Laptop">Laptop</option>
+                        <option value="Keyboard">Keyboard</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                      <label for="elementType">Element Type</label>
+                    </div>
+                  
+                    <div class="underline"></div>
+                  </div> 
+
+                <div class="custom-file-input">
+                    <input type="file" id="elementImage" name="elementImage" (change)="handleImageUpload($event)">
+                    <label class="file-label" for="elementImage">Choose File</label>
+                    <span class="file-name">{{ formData.elementImage ? nameOfImage : 'No file chosen' }}</span>
+                  </div>
+
+                  <div class="input-wrapper"    style="margin-top: 20px;">
+                    <input type="text"id="elementDescription" name="elementDescription" [(ngModel)]="formData.elementDescription" required>
+                    <label for="elementDescription">Element Description</label>
+                    <div class="underline"></div>
+                  </div>  
+                 
+                  <div class="input-wrapper">
+                    <input type="text" id="elementPrize" name="elementPrize" [(ngModel)]="formData.elementPrize" required> 
+                    <label for="elementPrize">Element Prize</label>
+                    <div class="underline"></div>
+                  </div>
+                <!-- <button class="button-class" type="submit">Save</button> -->
+                
+                    <button class="button-class" type="submit"  *ngIf="(formData.elementName) && (formData.elementType) && (formData.elementImage) && (formData.elementDescription) && (formData.elementPrize)" >Save</button>
+                    <!-- <button class="button-class"  *ngIf="!(formData.elementName)" ><i class="bi bi-check-circle green-icon"></i>Added </button> -->
+                   
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+ 
+
+  
+  
+ 
+  

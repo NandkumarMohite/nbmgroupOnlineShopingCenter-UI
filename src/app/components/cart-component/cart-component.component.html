@@ -1,0 +1,27 @@
+
+<h3 style="margin: 2%;">Your Cart</h3>
+<div *ngIf="cartCount.length==0"> <h5>Your Cart Is Empty!</h5></div>
+<div  *ngIf="cartCount.length>0" class="table-container">
+    <table class="cart-css" >
+        <thead >
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of cartCount">
+                <td>{{item.elementName}}</td>
+                <td>{{item.elementCartCount}}</td>
+                
+
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr class="total-row">
+                <td colspan="2">Total number of items: {{totalCount}}</td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

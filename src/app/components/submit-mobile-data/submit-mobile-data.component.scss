@@ -1,0 +1,240 @@
+@import '../welcome/welcome.component.scss';
+
+.saveFormClass{
+display: flex;
+    flex-direction: column;
+   
+}
+.card{
+    width: 50%;
+    justify-content: center;
+}
+.card-details{
+    width: 100%;
+    h3{
+        font-size:large;
+    }
+}
+.centered-card{
+    display: flex;
+  justify-content: center;
+}
+.col-md-6{
+    flex: 0 0 auto;
+     width: 100%;
+}
+input[type="text"], textarea {
+    border: none;
+    border-bottom: 1px solid aqua;
+    outline: none;
+  }
+  
+  .custom-file-input {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid aqua;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  
+  .custom-file-input input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .custom-file-input .file-label {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: aqua;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-file-input .file-name {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #888;
+  }
+
+  .select-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .select-dropdown select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid aqua;
+    border-radius: 5px;
+    background-color: white;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .select-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid aqua;
+    pointer-events: none;
+  }
+  
+  .select-dropdown select:focus {
+    outline: none;
+    border-color: aqua;
+  }
+  
+  .select-dropdown select:disabled {
+    background-color: #f9f9f9;
+    cursor: not-allowed;
+  }
+  
+  
+
+
+
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid aqua;
+    background-color: transparent;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  .input-wrapper label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    transition: top 0.3s, font-size 0.3s;
+  }
+  
+  .input-wrapper .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: aqua;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .input-wrapper input:focus,
+  .input-wrapper input:valid {
+    border-color: aqua;
+  }
+  
+  .input-wrapper input:focus + label,
+  .input-wrapper input:valid + label {
+    top: -20px;
+    font-size: 12px;
+  }
+  
+  .input-wrapper input:focus + label {
+    color: aqua;
+  }
+  
+  .input-wrapper input:focus + .underline,
+  .input-wrapper input:valid + .underline {
+    transform: scaleX(1);
+  }
+  
+
+ 
+
+
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    padding: 5px 0;
+    transition: top 0.3s, font-size 0.3s;
+  }
+  
+  .input-wrapper .dropdown {
+    position: relative;
+  }
+  
+  .input-wrapper .dropdown select {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-bottom: 1px solid aqua;
+    background-color: transparent;
+    outline: none;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .input-wrapper .dropdown .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid aqua;
+    pointer-events: none;
+  }
+  
+  .input-wrapper .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: aqua;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  
+  .input-wrapper select:focus + label,
+  .input-wrapper select:valid + label {
+    top: -20px;
+    font-size: 12px;
+  }
+  
+  .input-wrapper select:focus + label {
+    color: aqua;
+  }
+  
+  .input-wrapper select:focus + .underline,
+  .input-wrapper select:valid + .underline {
+    transform: scaleX(1);
+  }
+  
+  .button-class{
+    position: inherit;
+    
+    width: 100%;
+  
+  }

@@ -1,0 +1,67 @@
+/* Table container */
+
+.table-container {
+
+    width: 100%;
+
+}
+
+
+/* Table styles */
+
+.table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+
+/* Table header */
+
+.table th {
+
+    background-color: #f2f2f2;
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+    text-align: left;
+
+}
+
+
+/* Table body */
+
+.table td {
+
+    border: 1px solid #ccc;
+
+    padding: 10px;
+
+}
+
+
+
+
+.total-row {
+
+    font-weight: bold;
+
+}
+
+.cart-css{
+    th{
+        border-top: 1px solid aqua;
+        border-bottom: 1px solid aqua;
+
+        padding: 5px 0;
+    }   
+    margin: 3%; 
+    td{
+        padding: 10px;
+    }
+}
+

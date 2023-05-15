@@ -30,9 +30,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css"
             ],
-            "scripts": []
+            "scripts": [
+             
+              
+            ]
           },
           "configurations": {
             "production": {
@@ -54,6 +59,7 @@
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
+
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
@@ -100,5 +106,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "1bd5ab9e-abf0-4075-8725-173c24a15bf7"
   }
 }
